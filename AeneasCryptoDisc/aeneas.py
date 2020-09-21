@@ -28,7 +28,7 @@ def work(filename):
         print(letter, temp, string_length)
         previous = letter
 
-    result = int(round(string_length + radius))
+    result = int(math.ceil(string_length + radius))
 
     with open("output.txt", 'a') as output:
         output.write(str(result))
